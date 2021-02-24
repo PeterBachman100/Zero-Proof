@@ -1,0 +1,138 @@
+                            /*        NAVIGATION BAR         */
+header {
+    z-index: 5;
+    color: white;
+    position: fixed;
+    width: 100%;
+}
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1vw 0 1vw 0;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+header ul li {
+    display: inline-block;
+    width: 19%;
+    text-align: center;
+}
+/* Navigation Link Styling */
+header ul li a {
+    color: rgba(252, 248, 248, 0.692);
+    font-size: 20px;
+    font-size: 2vw;
+    text-decoration: none;
+    padding: 3% 10% 3% 10%;
+}
+header ul li a:hover {
+    background-color: rgba(146, 143, 143, 0.692);
+}
+header ul li a:active {
+    background-color: rgba(250, 250, 250, 0.795);
+}
+
+
+
+
+                        /*               BACKGROUND              */
+body {
+    background: rgb(255, 255, 255) url(../resources/white-background.jpeg) left top;
+    background-size: cover;
+    margin: 0 0 0 0;
+}
+
+
+
+
+
+                            /*             RECIPE            */
+main {
+    position: relative;
+    top: 6vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    color: rgba(54, 54, 54, 0.801);
+    display: grid;
+    grid-template-columns: repeat(9, 11.1%);
+    grid-template-rows: repeat(12, 11.1%);
+}
+.picture {
+    grid-area: 1 / 1 / 9 / 5 ;
+    width: 100%;
+    height: auto;
+}
+.intro {
+    grid-area: 1 / 5 / 3 / 10;
+    margin: 0 0 0 3%;
+    border: 1px dashed rgb(0, 0, 0);
+    margin-bottom: 1vw;
+}
+.name{
+    text-align: center;
+    font-size: 3vw;
+    margin: 0.5vw 0 0 0;
+    
+}
+.description {
+    text-align: center;
+    font-size: 1.5vw;
+    padding: 0 0.5vw 0.5vw 0.5vw;
+}
+.ingredients {
+    grid-area: 3 / 5 / 8 / 7;
+    margin: 0 0 0 3%;
+    background-color: rgba(255, 255, 255, 0.61);
+}
+.ingredients-heading {
+    text-align: center;
+    margin: 3% 3% 0 3%;
+    background-color: rgba(151, 150, 150, 0.692);
+    font-size: 2vw;
+}
+.ingredients-list {
+list-style-type: circle;
+font-size: 1.5vw;
+text-align: left;
+}
+.instructions {
+    grid-area: 3 / 7 / 8 / 10;
+    margin: 0 0 0 3%;
+    background-color: rgba(255, 255, 255, 0.61);
+    align-content: left;
+}
+.instructions-heading {
+    text-align: center;
+    font-size: 2vw;
+    background-color: rgba(151, 150, 150, 0.692);
+    margin: 3% 3% 0 3%;
+}
+.instructions-list {
+    font-size: 1.5vw;
+    text-align: left;
+}
+.tips {
+    grid-area: 8 / 1 / 10 / 10;
+    display: grid;
+    grid-template-areas: "heading list list list list list list list list";
+}
+.tips-heading {
+    text-align: center;
+    font-size: 2vw;
+    grid-area: heading;
+}
+.tips-list {
+    grid-area: list;
+    font-size: 1.5vw;
+}
+.vars {
+    grid-area: 10 / 1 / 11 / 10;
+}
+.vars-heading {
+    text-align: center;
+    font-size: 2vw;
+}
+.vars-list {
+    font-size: 1.5vw;
+}
+

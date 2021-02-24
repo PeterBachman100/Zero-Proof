@@ -1,0 +1,111 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+  }                                           
+
+/*        NAVIGATION BAR         */
+header {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.89);
+    border-bottom: 1px solid #FFB921 ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header a {
+    color: rgb(46, 46, 46);
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+    text-decoration: none;
+}
+header a:hover {
+    color: #FF7B14 ;
+}
+header a:active {
+    color: cornflowerblue;
+}
+
+
+
+                        /*               BACKGROUND              */
+body {
+    margin: 0px 0px 0px 0px;
+}
+
+
+
+
+
+                            /*             RECIPE            */
+main {
+    position: relative;
+    top: 50px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    color: rgba(0, 0, 0, 0.801);
+}
+h1 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+}
+h2 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+}
+li, p {
+    font-size: clamp(1.125rem,3vw,1.25rem);
+}
+.intro {
+    margin-bottom: 1vh;
+    text-align: center;
+}
+.name{
+    margin-bottom: 2vw;
+    margin-top: 1vw;    
+}
+.picture {
+    height: auto;
+    width: 50vw;
+    margin-left: 25vw;
+    box-shadow: 1px 1px 5px #FFB921;
+    border-radius: 2px;
+}
+.recipe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: rgb(126, 225, 250);
+}
+.ingredients {
+    margin: 1vw;
+    padding: 1vw;
+    flex-grow: 1;
+    border: 2px dotted cornflowerblue;
+}
+.instructions {
+    margin: 1vw;
+    padding: 1vw;
+    flex-grow: 1;
+    border: 2px dotted cornflowerblue;
+}
+.notes {
+    border: 2px dotted cornflowerblue;
+    margin: 1vw;
+    padding: 1vw;
+    flex-grow: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    .recipe {
+        display: initial;
+    }
+    .picture {
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+  }
