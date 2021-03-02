@@ -10,7 +10,7 @@ header {
     width: 100%;
     height: 50px;
     background-color: rgba(255, 255, 255, 0.89);
-    border-bottom: 1px solid #FFB921 ;
+    border-bottom: 1px dashed #FFB921  ;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -67,7 +67,7 @@ li, p {
     height: auto;
     width: 50vw;
     margin-left: 25vw;
-    box-shadow: 1px 1px 5px #FFB921;
+    box-shadow: 0px 0px 3px #FFE72E ;
     border-radius: 2px;
 }
 .recipe {
@@ -79,22 +79,26 @@ h2 {
     text-align: center;
     margin-top: 0;
     margin-bottom: 0;
-    background-color: #aaf4fd ;
+    background-color: #FFB921;
+    border-radius: 3px;
 }
 .ingredients {
     margin: 1vw;
     padding: 1vw;
     flex-grow: 1;
-    border: 2px dotted cornflowerblue;
+    border: 2px dotted #FFE72E ;
+    border-radius: 5px;
 }
 .instructions {
     margin: 1vw;
     padding: 1vw;
     flex-grow: 1;
-    border: 2px dotted cornflowerblue;
+    border: 2px dotted #FFE72E;
+    border-radius: 5px;
 }
 .notes {
-    border: 2px dotted cornflowerblue;
+    border: 2px dotted #FFE72E;
+    border-radius: 5px;
     margin: 1vw;
     padding: 1vw;
     flex-grow: 1;
