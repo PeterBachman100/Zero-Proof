@@ -1,7 +1,9 @@
 * {
     font-family: Helvetica, Arial, sans-serif;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
   }
-/*        NAVIGATION BAR         */
+/* -------------- Navigation Bar ---------------- */
 header {
   z-index: 2;
   position: fixed;
@@ -20,40 +22,107 @@ header a {
   text-decoration: none;
 }
 header a:hover {
-  color: rgb(145, 193, 248);
+  color: #FF7B14 ;
 }
 header a:active {
   color: cornflowerblue;
 }
 
-  body {
+body {
     margin: 0 0 0 0;
 }
 main {
     position: relative;
-    top: 5vw;
+    top: 50px;
     margin-left: 1%;
     margin-right: 1%;
     text-align: center;
 }
-
+/* -------------------- Title ----------------- */
 h1 {
-    margin-top: 0;
-    padding: 1%;
-    font-size: 3vw;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  color: #FFB921;
+  font-size: clamp(2rem, 7vw, 3.5rem);
 }
-.intro {
-    padding: 5%;
-    font-size: 2.5vw;
+/* ------------------- About ---------------- */
+h2 {
+  margin-top: 200px;
+  margin-bottom: 200px;
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
 }
-.page-links {
-    border: 2px dotted cornflowerblue;
-    font-size: 2vw;
-    padding: 5%;
-    margin: 1%;
+em {
+  color: #FFB921;
 }
+.name {
+  color: #FFB921;
+}
+/* --------------- Equation --------------*/
+.equation {
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  border-top: 3px solid #FF7B14;
+  border-bottom: 3px solid #FF7B14;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+/* --------------- Grid ------------------- */
+.blurb {
+  margin: 10px 10px 10px 10px;
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: 1fr, 1fr;
+  align-items: center;
+  justify-items: center;
+}
+figure {
+  border: 2px dotted #FFE72E;
+}
+figcaption {
+  margin: 5px 5px 5px 5px;
+}
+.top-left {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+.top-right {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 25px;
+  font-size: clamp(1.25rem, 2.5vw, 2rem);
+}
+.bottom-left {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  text-align: left;
+  padding: 15px;
+  font-size: clamp(1.125rem, 2vw, 1.5rem);
+}
+.bottom-right {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+img{
+  width: 100%;
+}
+a {
+  color: #FF7B14;
+}
+/* -------------- Cheers ------------ */
+
 .cheers {
-  font-size: 2.5vw;
+  background-color: #FFB921;
+  color: white;
   margin: 20px;
   padding: 20px;
+  font-size: clamp(1.5rem, 5vw, 2.25rem);
+}
+/* ---------------- Media Queries ----------------- */
+
+@media only screen and (max-width: 600px) {
+  .blurb {
+    display: inline;
+  }
 }

@@ -1,5 +1,6 @@
 * {
     font-family: Helvetica, Arial, sans-serif;
+    padding: 0;
   }
 /*        NAVIGATION BAR         */
 header {
@@ -31,7 +32,7 @@ header a:active {
 }
 main {
     position: relative;
-    top: 5vw;
+    top: 50px;
     margin-left: 1%;
     margin-right: 1%;
     text-align: center;
@@ -39,24 +40,24 @@ main {
 
 h1 {
   font-size: clamp(3rem, 4vw, 4rem);
-  text-shadow: 1px 1px 1px #FFB921;
+  color: #FFB921;
   border: 1px dashed #FFE72E;
   border-radius: 100px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
+h2 {
+  color: white;
+  background-color: #FFB921;
+  padding: 10px;
+  margin: 0;
+}
 .intro {
     padding: 5%;
     font-size: 2vw;
-    border: 2px solid black;
-}
-.page-links {
-    border: 3px solid black;
-    padding: 5%;
-    margin: 1%;
 }
 a {
-    color: rgb(2, 2, 2);
+    color: #FF7B14;
 }
 li {
     font-size: 1.75vw;
@@ -67,4 +68,9 @@ ul {
     margin-right: 15%;
     margin-bottom: 5%;
     margin-top: 5%;
+}
+div {
+  border: 1px dotted #FFE72E;
+  border-radius: 15px;
+  margin: 10px;
 }
