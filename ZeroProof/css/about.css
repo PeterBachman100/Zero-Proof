@@ -115,7 +115,8 @@ a {
 .cheers {
   background-color: #FFB921;
   color: white;
-  margin: 20px;
+  margin-top: 50px;
+  margin-bottom: 100px;
   padding: 20px;
   font-size: clamp(1.5rem, 5vw, 2.25rem);
 }

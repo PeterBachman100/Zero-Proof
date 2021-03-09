@@ -51,16 +51,19 @@ h2 {
   background-color: #FFB921;
   padding: 10px;
   margin: 0;
+  font-size: clamp(2rem, 5vw, 2.5rem);
 }
 .intro {
     padding: 5%;
     font-size: 2vw;
+    font-size: clamp(1.75rem, 3vw, 2.25rem);
 }
 a {
     color: #FF7B14;
 }
 li {
-    font-size: 1.75vw;
+    font-size: 1.75rem;
+    font-size: clamp(1.5rem, 3vw, 1.75rem);
     text-align: left;
 }
 ul {
