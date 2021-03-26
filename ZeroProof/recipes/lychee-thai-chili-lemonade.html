@@ -24,26 +24,30 @@
     <div class="recipe">
       <div class="ingredients">
         <h2>Ingredients</h2>
+        <div class="servings">
+          <span>Servings:</span>
+          <data class="quantity">1</data>
+          <button onclick="decrementMultilpier()">-</button>
+          <button onclick="incrementMultiplier()">+</button>
+        </div>    
         <ul>
-          <li><strong>Serves 4-6</strong></li>
-          <li>1.5 cups of lychee flesh</li>
-          <li>1 cup lemon juice</li>
-          <li>3/4 cup sugar</li>
+          <li><data class="quantity">0.25</data> cup(s) of lychee flesh</li>
+          <li><data class="quantity">2</data> oz. lemon juice</li>
+          <li><data class="quantity">1.5</data> oz. sugar</li>
           <li>Pinch salt</li>
-          <li>1/2 small red Thai Chili</li>
-          <li>3 cups water</li>
-          <li>Garnish: Optional whole Chili</li>
-          <li>Preferred drinkware: Martini Glass</li>
+          <li><data class="quantity">0.125</data> small red Thai Chili</li>
+          <li><data class="quantity">6</data> oz. water</li>
+          <li>Garnish: Optional whole Chili and lychee flesh</li>
+          <li>Preferred drinkware: collins glass</li>
         </ul>
       </div>
       <div class="instructions">
         <h2>Instructions</h2>
         <ol>
           <li>Blend lychee, lemon juice, sugar, salt, and Thai chili at high speed until smooth (about 1 minute).</li>
-          <li>Strain into a pitcher.</li>
-          <li>Stir in the water and combine thoroughly.</li>
-          <li>Pour into glasses.</li>
-          <li>Garnish with optional whole Chili.</li>
+          <li>Add water and blend until combined.</li>
+          <li>Strain into a glass filled halfway with ice.</li>
+          <li>Garnish with lychee fruit and optional whole Chili.</li>
         </ol>
       </div>
       <div class="notes">
@@ -55,5 +59,8 @@
       </div>  
     </div>
   </main>
+
+  <script src="../js/servingsMultiplier.js"></script>
+
 </body>
 </html>

@@ -24,11 +24,17 @@
     <div class="recipe">
       <div class="ingredients">
         <h2>Ingredients</h2>
+        <div class="servings">
+          <span>Servings:</span>
+          <data class="quantity">1</data>
+          <button onclick="decrementMultilpier()">-</button>
+          <button onclick="incrementMultiplier()">+</button>
+        </div>    
         <ul>
-          <li>4 oz. pineapple juice</li>
-          <li>1 oz. cream of coconut</li>
-          <li>0.5 oz. coconut cream</li>
-          <li>0.5 - 1 cup ice</li>
+          <li> <data class="quantity">4</data> oz. pineapple juice</li>
+          <li> <data class="quantity">1</data> oz. cream of coconut</li>
+          <li> <data class="quantity">0.5</data> oz. coconut cream</li>
+          <li> <data class="quantity">0.5</data> cup(s) ice</li>
           <li>Garnish: maraschino cherry and/or pineapple wedge</li>
           <li>Preferred drinkware: Hurricane glass</li>
         </ul>
@@ -51,5 +57,8 @@
       </div>
     </div>
   </main>
+
+  <script src="../js/servingsMultiplier.js"></script>
+
 </body>
 </html>

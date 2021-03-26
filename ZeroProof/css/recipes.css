@@ -54,7 +54,7 @@ h1{
 .recipes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: start;
 }
 
 
@@ -64,9 +64,10 @@ h1{
     text-decoration: none;
     position: relative;
     text-align: center;
-    background-color: rgb(114, 114, 114);
+    background-color: #FFB921;
     box-shadow: 0px 0px 2px #FF7B14 ;
     flex: auto;
+    max-width: 500px;
 }
 .recipe img {
     width: 100%;

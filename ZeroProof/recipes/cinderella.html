@@ -25,12 +25,18 @@
     <div class="recipe">
       <div class="ingredients">
         <h2>Ingredients</h2>
+        <div class="servings">
+          <span>Servings:</span>
+          <data class="quantity">1</data>
+          <button onclick="decrementMultilpier()">-</button>
+          <button onclick="incrementMultiplier()">+</button>
+        </div>    
         <ul>
-          <li>1 oz. lemon juice</li>
-          <li>1 oz. orange juice</li>
-          <li>1 oz. pineapple juice</li>
+          <li><data class="quantity">1</data> oz. lemon juice</li>
+          <li><data class="quantity">1</data> oz. orange juice</li>
+          <li><data class="quantity">1</data> oz. pineapple juice</li>
           <li>Dash of grenadine</li>
-          <li>2 oz. ginger ale</li>
+          <li><data class="quantity">2</data> oz. ginger ale</li>
           <li>Optional: 2 dashes Angostura bitters</li>
           <li>Garnish: pineapple and orange slices</li>
           <li>Preferred drinkware: Collins glass</li>
@@ -55,5 +61,8 @@
       </div>
     </div>
   </main>
+
+  <script src="../js/servingsMultiplier.js"></script>
+
 </body>
 </html>

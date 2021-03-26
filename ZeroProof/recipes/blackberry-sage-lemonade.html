@@ -24,12 +24,19 @@
     <div class="recipe">
       <div class="ingredients">
         <h2>Ingredients</h2>
+        <div class="servings">
+          <span>Servings:</span>
+          <data class="quantity">1</data>
+          <button onclick="decrementMultilpier()">-</button>
+          <button onclick="incrementMultiplier()">+</button>
+        </div>    
         <ul>
-          <li>1 qaurt blackberries</li>
-          <li>1 cup lemon juice</li>
-          <li>1/2 cup sugar</li>
-          <li>1 bunch fresh sage</li>
-          <li>3 cups water</li>
+          <li><data class="quantity">1</data> cup(s) blackberries</li>
+          <li><data class="quantity">2</data> oz. lemon juice</li>
+          <li><data class="quantity">1</data> oz. sugar</li>
+          <li><data class="quantity">2</data> leaves fresh sage</li>
+          <li>Pinch salt</li>
+          <li><data class="quantity">6</data> oz. water</li>
           <li>Garnish: Sage and blackberries</li>
           <li>Preferred drinkware: Collins glass</li>
         </ul>
@@ -38,9 +45,9 @@
         <h2>Instructions</h2>
         <ol>
           <li>Blend blackberries, lemon juice, sugar, and salt until smooth (about 1 minute)</li>
-          <li>Lightly muddle sage leaves in the bottom of a pitcher</li>
-          <li>Strain the juice mixture into the pitcher and stir to combine. You may need to whisk.</li>
-          <li>Pour into 4-6 glasses filled half-way with ice.</li>
+          <li>Lightly muddle sage leaves in the bottom of a glass</li>
+          <li>Strain the juice mixture into the glass and stir to combine.</li>
+          <li>Fill the glass the rest of the way with ice.</li>
           <li>Garnish with a few blackberries and 1-2 sage leaves that have been clapped between your hands (or otherwise lightly distressed).</li>
         </ol>
       </div>
@@ -53,5 +60,8 @@
       </div>  
     </div>
   </main>
+
+  <script src="../js/servingsMultiplier.js"></script>
+
 </body>
 </html>

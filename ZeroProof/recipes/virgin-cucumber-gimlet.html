@@ -24,11 +24,17 @@
     <div class="recipe">
       <div class="ingredients">
         <h2>Ingredients</h2>
+        <div class="servings">
+          <span>Servings:</span>
+          <data class="quantity">1</data>
+          <button onclick="decrementMultilpier()">-</button>
+          <button onclick="incrementMultiplier()">+</button>
+        </div>    
         <ul>
-          <li>1.5 oz. club soda</li>
-          <li>4-5 slices cucumber</li>
-          <li>1 oz. lime juice</li>
-          <li>1 oz. simple syrup</li>
+          <li><data class="quantity">1.5</data> oz. club soda</li>
+          <li><data class="quantity">4</data> slices cucumber</li>
+          <li><data class="quantity">1</data> oz. lime juice</li>
+          <li><data class="quantity">1</data> oz. simple syrup</li>
           <li>Garnish: cucmber slice</li>
           <li>Preferred drinkware: lowball glass</li>
         </ul>
@@ -51,5 +57,8 @@
       </div>
     </div>
   </main>
+
+  <script src="../js/servingsMultiplier.js"></script>
+
 </body>
 </html>

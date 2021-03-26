@@ -24,14 +24,19 @@
     <div class="recipe">
       <div class="ingredients">
         <h2>Ingredients</h2>
+        <div class="servings">
+          <span>Servings:</span>
+          <data class="quantity">1</data>
+          <button onclick="decrementMultilpier()">-</button>
+          <button onclick="incrementMultiplier()">+</button>
+        </div>    
         <ul>
-            <li>2 quarts 1-inch seedless watermelon chunks</li>
-            <li>1 cup fresh juice from 10 to 12 lemons</li>
-            <li> 1/2 cup sugar</li>
-            <li>pinch salt</li>
-            <li>Cold water as needed</li>
-            <li>1 small bunch Mint</li>
-            <li>1 quart ice</li>
+          <li><data class="quantity">2</data> cup(s) 1-inch seedless watermelon chunks</li>
+          <li><data class="quantity">2</data> oz. fresh lemon juice</li>
+          <li><data class="quantity">1</data> oz. sugar</li>
+          <li>Pinch salt</li>
+          <li>Cold water as needed</li>
+          <li><data class="quantity">3</data> mint leaves</li>
           <li>Garnish: Mint and watermelon </li>
           <li>Preferred drinkware: Collins glass</li>
         </ul>
@@ -40,11 +45,11 @@
         <h2>Instructions</h2>
         <ol>
           <li>Blend watermelon, lemon juice, sugar, and salt until smooth (about 1 minute)</li>
-          <li>Strain mixture into a 1 quart measuring cup</li>
-          <li>Add water to equal 1 quart</li>
-          <li>Muddle mint in the bottom of a pitcher</li>
+          <li>Strain mixture into a measuring cup</li>
+          <li>Add water to equal 1 cup</li>
+          <li>Muddle mint in the bottom of a glass</li>
           <li>Pour in the watermelon mixture and stir</li>
-          <li>Fill glasses half way with ice and pour in the drink</li>
+          <li>Add ice if desired</li>
           <li>Garnish with a mint sprig and a small watermelon slice</li>
         </ol>
       </div>
@@ -58,5 +63,8 @@
       </div>  
     </div>
   </main>
+
+  <script src="../js/servingsMultiplier.js"></script>
+
 </body>
 </html>

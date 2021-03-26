@@ -25,9 +25,15 @@
     <div class="recipe">
       <div class="ingredients">
         <h2>Ingredients</h2>
+        <div class="servings">
+          <span>Servings:</span>
+          <data class="quantity">1</data>
+          <button onclick="decrementMultilpier()">-</button>
+          <button onclick="incrementMultiplier()">+</button>
+        </div>    
         <ul>
-          <li>1</li>
-          <li>2</li>
+          <li><data class="quantity">1</data> oz something</li>
+          <li><data class="quantity">2</data> oz something else</li>
           <li>Garnish:</li>
           <li>Preferred drinkware:</li>
         </ul>
@@ -50,5 +56,6 @@
       </div>  
     </div>
   </main>
+  <script src="../js/servingsMultiplier.js"></script>
 </body>
 </html>

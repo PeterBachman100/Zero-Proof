@@ -24,12 +24,18 @@
     <div class="recipe">
       <div class="ingredients">
         <h2>Ingredients</h2>
+        <div class="servings">
+          <span>Servings:</span>
+          <data class="quantity">1</data>
+          <button onclick="decrementMultilpier()">-</button>
+          <button onclick="incrementMultiplier()">+</button>
+        </div>    
         <ul>
-          <li>1 cup of hulled and quartered strawberries</li>
-          <li>3 thin slices of jalapeno, seeds and ribs removed</li>
-          <li>2 oz. lemon juice</li>
-          <li>1.5 oz. sugar</li>
-          <li>6 oz. water</li>
+          <li><data class="quantity">1</data> cup of hulled and quartered strawberries</li>
+          <li><data class="quantity">3</data> thin slices of jalapeno, seeds and ribs removed</li>
+          <li><data class="quantity">2</data> oz. lemon juice</li>
+          <li><data class="quantity">1.5</data> oz. sugar</li>
+          <li><data class="quantity">6</data> oz. water</li>
           <li>Pinch salt</li>
           <li>Garnish: Strawberry and jalapeno slice</li>
           <li>Preferred drinkware: Collins glass</li>
@@ -39,7 +45,7 @@
         <h2>Instructions</h2>
         <ol>
           <li>Combine strawberries, jalapeno, sugar, and salt in a bowl and toss to coat. Let it rest for 30 minutes.</li>
-          <li>Remove jalapeno slices and a few strawberry pieces to use a the garnish.</li>
+          <li>Remove jalapeno slices and a few strawberry pieces to use as the garnish.</li>
           <li>Blend the rest of the strawberries with lemon juice on high speed until smooth (about 1 minute).</li>
           <li>Add cold water and blend briefly to mix.</li>
           <li>Strain the mixture into a glass.</li>
@@ -57,5 +63,8 @@
       </div>  
     </div>
   </main>
+
+  <script src="../js/servingsMultiplier.js"></script>
+
 </body>
 </html>

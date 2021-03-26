@@ -24,11 +24,17 @@
     <div class="recipe">
       <div class="ingredients">
         <h2>Ingredients</h2>
+        <div class="servings">
+          <span>Servings:</span>
+          <data class="quantity">1</data>
+          <button onclick="decrementMultilpier()">-</button>
+          <button onclick="incrementMultiplier()">+</button>
+        </div>    
         <ul>
-          <li>1 cup raspberries</li>
-          <li>2 oz. lime juice</li>
-          <li>1 oz. sugar</li>
-          <li>6 oz. water</li>
+          <li><data class="quantity">1</data> cup(s) raspberries</li>
+          <li><data class="quantity">2</data> oz. lime juice</li>
+          <li><data class="quantity">1</data> oz. sugar</li>
+          <li><data class="quantity">6</data> oz. water</li>
           <li>Pinch of salt</li>
           <li>Garnish: raspberries and lime wedge</li>
           <li>Preferred drinkware: Collins glass</li>
@@ -38,8 +44,8 @@
         <h2>Instructions</h2>
         <ol>
           <li>Blend the raspberries, lime juice, sugar, and salt on high speed until smooth (about 1 minute).</li>
-          <li>Strain through a fine mesh strainer into a glass.</li>
-          <li>Add water and stir.</li>
+          <li>Add water and blend until combined.</li>
+          <li>Strain through a fine mesh strainer into a glass filled halfway with ice.</li>
           <li>Garnish with raspberries and a lime wedge.</li>
         </ol>
       </div>
@@ -53,5 +59,8 @@
       </div>  
     </div>
   </main>
+
+  <script src="../js/servingsMultiplier.js"></script>
+
 </body>
 </html>

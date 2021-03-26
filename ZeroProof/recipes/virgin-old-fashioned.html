@@ -24,11 +24,17 @@
     <div class="recipe">
       <div class="ingredients">
         <h2>Ingredients</h2>
+        <div class="servings">
+          <span>Servings:</span>
+          <data class="quantity">1</data>
+          <button onclick="decrementMultilpier()">-</button>
+          <button onclick="incrementMultiplier()">+</button>
+        </div>    
         <ul>
-          <li>2 oz. barley tea</li>
-          <li>1 orange slice</li>
-          <li>1 sugar cube</li>
-          <li>2 dashes Angostura Bitters</li>
+          <li> <data class="quantity">2</data> oz. barley tea</li>
+          <li> <data class="quantity">1</data> orange slice(s)</li>
+          <li> <data class="quantity">1</data> sugar cube(s)</li>
+          <li> <data class="quantity">2</data> dashes Angostura Bitters</li>
           <li>Garnish: maraschino cherry & orange slice</li>
           <li>Preferred drinkware: lowball glass</li>
         </ul>
@@ -54,5 +60,8 @@
       </div>
     </div>
   </main>
+
+  <script src="../js/servingsMultiplier.js"></script>
+
 </body>
 </html>

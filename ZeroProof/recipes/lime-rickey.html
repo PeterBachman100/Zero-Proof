@@ -24,10 +24,16 @@
     <div class="recipe">
     <div class="ingredients">
       <h2>Ingredients</h2>
+      <div class="servings">
+        <span>Servings:</span>
+        <data class="quantity">1</data>
+        <button onclick="decrementMultilpier()">-</button>
+        <button onclick="incrementMultiplier()">+</button>
+      </div>    
       <ul>
-        <li>2 oz. lime juice</li>
-        <li>1 oz. simple syrup</li>
-        <li>3 oz. seltzer water</li>
+        <li><data class="quantity">2</data> oz. lime juice</li>
+        <li><data class="quantity">1</data> oz. simple syrup</li>
+        <li><data class="quantity">3</data> oz. seltzer water</li>
         <li>Garnish: lime wedge</li>
         <li>Preferred drinkware: Collins glass</li>
       </ul>
@@ -51,5 +57,8 @@
     </div>
   </div>
   </main>
+
+  <script src="../js/servingsMultiplier.js"></script>
+
 </body>
 </html>

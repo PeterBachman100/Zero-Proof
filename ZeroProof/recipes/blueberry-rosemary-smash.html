@@ -24,13 +24,19 @@
     <div class="recipe">
       <div class="ingredients">
         <h2>Ingredients</h2>
+        <div class="servings">
+          <span>Servings:</span>
+          <data class="quantity">1</data>
+          <button onclick="decrementMultilpier()">-</button>
+          <button onclick="incrementMultiplier()">+</button>
+        </div>    
         <ul>
-          <li>Leaves from a small rosemary sprig</li>
-          <li>7-8 blueberries</li>
-          <li>1 oz. honey syrup</li>
-          <li>1 oz. lemon juice</li>
-          <li>4 oz. club soda</li>
-          <li>Garnish: rosemary sprig & blueberries</li>
+          <li><data class="quantity">1</data> tsp. rosmary leaves</li>
+          <li><data class="quantity">8</data> blueberries</li>
+          <li><data class="quantity">1</data> oz. honey syrup</li>
+          <li><data class="quantity">1</data> oz. lemon juice</li>
+          <li><data class="quantity">4</data> oz. club soda</li>
+          <li>Garnish: Rosemary sprig & blueberries</li>
           <li>Preferred drinkware: lowball</li>
         </ul>
     </div>
@@ -56,5 +62,8 @@
     </div>
     </div>
   </main>
+
+  <script src="../js/servingsMultiplier.js"></script>
+
 </body>
 </html>

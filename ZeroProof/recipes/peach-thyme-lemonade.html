@@ -24,14 +24,19 @@
     <div class="recipe">
       <div class="ingredients">
         <h2>Ingredients</h2>
+        <div class="servings">
+          <span>Servings:</span>
+          <data class="quantity">1</data>
+          <button onclick="decrementMultilpier()">-</button>
+          <button onclick="incrementMultiplier()">+</button>
+        </div>    
         <ul>
-          <li><strong>Serves 4-6</strong></li>
-          <li>3 fresh peaches, cut into small pieces</li>
-          <li>1 cup lemon juice</li>
-          <li>3/4 cup sugar</li>
+          <li><data class="quantity">1</data> fresh peach(es), cut into small pieces</li>
+          <li><data class="quantity">2</data> oz. lemon juice</li>
+          <li><data class="quantity">1.5</data> oz. sugar</li>
           <li>Pinch salt</li>
-          <li>1 bunch thyme</li>
-          <li>3 cups water</li>
+          <li><data class="quantity">1</data> tbsp. thyme</li>
+          <li><data class="quantity">6</data> oz. water</li>
           <li>Garnish: Thyme sprig and optional peach slice</li>
           <li>Preferred drinkware: Collins glass</li>
         </ul>
@@ -40,10 +45,11 @@
         <h2>Instructions</h2>
         <ol>
           <li>Blend peaches, lemon juice, sugar, and salt at high speed until smooth (about 1 minute).</li>
-          <li>Muddle thyme in the bottom of a pitcher.</li>
-          <li>Strain peach puree into the pitcher.</li>
-          <li>Add water and stir thoroughly to combine.</li>
-          <li>Pour into glasses with ice if desired.</li>
+          <li>Add water and blend until combined.</li>
+          <li>Muddle thyme in the bottom of the glass.</li>
+          <li>Strain peach puree into the glass.</li>
+          <li>Stir thoroughly to combine.</li>
+          <li>Add ice if desired.</li>
           <li>Garnish with a thyme sprig and optional peach slice.</li>
         </ol>
       </div>
@@ -56,5 +62,8 @@
       </div>  
     </div>
   </main>
+
+  <script src="../js/servingsMultiplier.js"></script>
+
 </body>
 </html>

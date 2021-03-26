@@ -24,11 +24,17 @@
     <div class="recipe">
       <div class="ingredients">
         <h2>Ingredients</h2>
+        <div class="servings">
+          <span>Servings:</span>
+          <data class="quantity">1</data>
+          <button onclick="decrementMultilpier()">-</button>
+          <button onclick="incrementMultiplier()">+</button>
+        </div>    
         <ul>
-          <li>1/2 cup lime juice</li>
-          <li>3/4 cup sweetened condensed milk</li>
+          <li><data class="quantity">1</data> oz. lime juice</li>
+          <li><data class="quantity">1.5</data> oz. sweetened condensed milk</li>
           <li>pinch salt</li>
-          <li>3 cups water</li>
+          <li><data class="quantity">6</data> oz. water</li>
           <li>Garnish: Lime slice</li>
           <li>Preferred drinkware: Collins glass</li>
         </ul>
@@ -37,8 +43,8 @@
         <h2>Instructions</h2>
         <ol>
           <li>Blend all ingredients until frothy, about 30 seconds.</li>
-          <li>Fill glasses about half full with ice</li>
-          <li>Pour blended mix into glasses</li>
+          <li>Fill glass about half full with ice</li>
+          <li>Pour blended mix into glass</li>
           <li>Garnish with a slice of lime.</li>
         </ol>
       </div>
@@ -51,5 +57,8 @@
       </div>  
     </div>
   </main>
+
+  <script src="../js/servingsMultiplier.js"></script>
+
 </body>
 </html>

@@ -24,9 +24,15 @@
     <div class="recipe">
       <div class="ingredients">
         <h2>Ingredients</h2>
+        <div class="servings">
+          <span>Servings:</span>
+          <data class="quantity">1</data>
+          <button onclick="decrementMultilpier()">-</button>
+          <button onclick="incrementMultiplier()">+</button>
+        </div>    
         <ul>
-          <li>1/4 oz. grenadine</li>
-          <li>8 oz. cola</li>
+          <li><data class="quantity">0.5</data> oz. grenadine</li>
+          <li><data class="quantity">6</data> oz. cola</li>
           <li>Garnish: maraschino cherry</li>
           <li>Preferred drinkware: Collins glass</li>
         </ul>
@@ -43,6 +49,7 @@
       <div class="notes">
         <h2>Notes</h2>
         <ul>
+          <li>Add more grenadine if you want it sweeter!</li>
           <li>If available, use a cola with less sweetness; colas from less
                 recognized brands may bring unique flavors to enjoy.</li>
           <li>Swap the maraschino cherry for a luxardo cherry for an upscaled flavor.</li>
@@ -52,5 +59,8 @@
       </div>
     </div>
   </main>
+
+  <script src="../js/servingsMultiplier.js"></script>
+
 </body>
 </html>

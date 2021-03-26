@@ -24,9 +24,15 @@
     <div class="recipe">
       <div class="ingredients">
         <h2>Ingredients</h2>
+        <div class="servings">
+          <span>Servings:</span>
+          <data class="quantity">1</data>
+          <button onclick="decrementMultilpier()">-</button>
+          <button onclick="incrementMultiplier()">+</button>
+        </div>    
         <ul>
-          <li>3 oz. <a href="../recipes/lemonade.html">lemonade</a></li>
-          <li>6 oz. iced tea</li>
+          <li><data class="quantity">3</data> oz. <a href="../recipes/lemonade.html">lemonade</a></li>
+          <li><data class="quantity">6</data> oz. iced tea</li>
           <li>Garnish: lemon wedge</li>
           <li>Preferred drinkware: tall glass</li>
         </ul>
@@ -48,5 +54,8 @@
       </div>  
     </div>
   </main>
+
+  <script src="../js/servingsMultiplier.js"></script>
+
 </body>
 </html>
