@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arnold Palmer</title>
+    <link rel="stylesheet" href="../css/recipe-template.css">
+</head>
+<body>
+                        <!--                  NAV BAR                     -->
+<header>
+  <a href="../index.html">Home</a>
+  <a href="../main-pages/recipes.html">Recipes</a>
+  <a href="../main-pages/ingredients.html">Ingredients</a>
+  <a href="../main-pages/about.html">About</a>
+</header>
+                    <!--                   RECIPE                     -->
+  <main>
+    <div class="intro">
+      <h1 class="name">Arnold Palmer</h1>
+      <p>A simple and refreshing mix of iced tea and lemonade makes for easy summertime sipping.</p>
+    </div>
+    <img class="picture" src="../resources/arnold-palmer.webp" alt="Roy Rogers Mocktail.">
+    <div class="recipe">
+      <div class="ingredients">
+        <h2>Ingredients</h2>
+        <div class="servings">
+          <span>Servings:</span>
+          <data class="quantity">1</data>
+          <button onclick="decrementMultilpier()">-</button>
+          <button onclick="incrementMultiplier()">+</button>
+        </div>    
+        <ul>
+          <li><data class="quantity">3</data> oz. <a href="../recipes/lemonade.html">lemonade</a></li>
+          <li><data class="quantity">6</data> oz. iced tea</li>
+          <li>Garnish: lemon wedge</li>
+          <li>Preferred drinkware: tall glass</li>
+        </ul>
+      </div>
+      <div class="instructions">
+        <h2>Instructions</h2>
+        <ol>
+          <li>Pour lemonade and iced tea into a glass with ice.</li>
+          <li>Stir.</li>
+          <li>Garnish with lemon wedge.</li>
+        </ol>
+      </div>
+      <div class="notes">
+        <h2>Notes</h2>
+        <ul>
+          <li>Use black tea for the iced tea, oolong is recommended.</li>
+            <li>Make fresh homemade lemonade to bring this drink up a notch.</li>
+        </ul>
+      </div>  
+    </div>
+  </main>
+
+  <script src="../js/servingsMultiplier.js"></script>
+
+</body>
+</html>
