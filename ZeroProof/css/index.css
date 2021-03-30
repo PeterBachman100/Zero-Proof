@@ -113,3 +113,6 @@ main {
   padding-top: 2vw;
   padding-bottom: 3vw;
 }
+.cheers-text a {
+  color: white;
+}
